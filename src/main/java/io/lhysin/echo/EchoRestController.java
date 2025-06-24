@@ -17,6 +17,11 @@ public class EchoRestController {
         return appName;
     }
 
+    @GetMapping("/health")
+    public String health() {
+        return "ok";
+    }
+
     @RequestMapping("/**")
     public String fallback(HttpServletRequest request) {
         return "Echo: " + request.getRequestURI();
