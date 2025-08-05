@@ -11,5 +11,5 @@ ENTRYPOINT ["sh", "-c", "java \
   -Xmx${JVM_XMX:-256m} \
   -XX:MaxMetaspaceSize=${JVM_MAX_META:-128m} \
   -Dspring.profiles.active=${ACTIVE_PROFILES:-default} \
-  -Dspring.application.name=${SPRING_APPLICATION_NAME:-myapp} \
+  -Dspring.application.name=${SPRING_APPLICATION_NAME:-echo-server} \
   -jar app.jar"]
