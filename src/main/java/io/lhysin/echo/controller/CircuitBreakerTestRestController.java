@@ -1,4 +1,4 @@
-package io.lhysin.echo;
+package io.lhysin.echo.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
