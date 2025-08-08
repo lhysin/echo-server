@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: echo-server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env

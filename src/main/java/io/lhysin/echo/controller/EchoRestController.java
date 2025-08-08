@@ -25,11 +25,6 @@ public class EchoRestController {
         return appName;
     }
 
-    @GetMapping("/health")
-    public String health() {
-        return "ok";
-    }
-
     @RequestMapping("/**")
     public FallbackResponse fallback(HttpServletRequest request) {
         return FallbackResponse.builder()
